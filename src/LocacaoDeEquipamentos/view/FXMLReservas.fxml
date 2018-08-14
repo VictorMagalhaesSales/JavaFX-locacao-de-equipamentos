@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LocacaoDeEquipamentos.controller.FXMLReservasController">
+   <children>
+      <ImageView fitHeight="726.0" fitWidth="1561.0" layoutX="-9.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="248.0" fitWidth="1282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cima3.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="35.0" layoutY="35.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="47.0" fitWidth="36.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/voltar.png" />
+         </image>
+         <effect>
+            <Shadow color="#ff8400" height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </ImageView>
+      <Button layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onAction="#voltar" opacity="0.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 500;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1221.0" layoutY="-23.0" mnemonicParsing="false" onAction="#sair" prefHeight="33.0" prefWidth="64.0" style="-fx-background-color: rgba(0,0,0,0);" text="x" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="41.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="131.0" layoutY="213.0" prefHeight="400.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="76.66667175292969" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="498.0" prefWidth="220.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="381.0" prefWidth="220.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" prefWidth="220.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" prefWidth="220.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" prefWidth="220.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="6.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField alignment="CENTER" editable="false" prefHeight="48.0" prefWidth="861.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text="Segunda" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri Light" size="21.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="11.0" prefHeight="54.0" prefWidth="125.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text="Terça" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Calibri Light" size="21.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="160.0" layoutY="11.0" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text="Quarta" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Calibri Light" size="21.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="310.0" layoutY="11.0" prefHeight="56.0" prefWidth="125.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text="Quinta" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Calibri Light" size="21.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="11.0" prefHeight="54.0" prefWidth="125.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text=" Sexta" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Calibri Light" size="21.0" />
+               </font></TextField>
+            <TextField fx:id="seg1" alignment="CENTER" editable="false" prefHeight="77.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="seg2" alignment="CENTER" editable="false" layoutX="10.0" layoutY="54.0" prefHeight="53.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="seg3" alignment="CENTER" editable="false" layoutX="10.0" layoutY="89.0" prefHeight="100.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <TextField fx:id="seg4" alignment="CENTER" editable="false" layoutX="10.0" layoutY="126.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="seg5" alignment="CENTER" editable="false" layoutX="10.0" layoutY="162.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="seg6" alignment="CENTER" editable="false" layoutX="10.0" layoutY="195.0" prefHeight="77.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="seg7" alignment="CENTER" editable="false" layoutX="10.0" layoutY="231.0" prefHeight="76.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="seg8" alignment="CENTER" editable="false" layoutX="10.0" layoutY="269.0" prefHeight="133.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="seg9" alignment="CENTER" editable="false" layoutX="10.0" layoutY="306.0" prefHeight="71.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="ter1" alignment="CENTER" editable="false" layoutX="10.0" layoutY="54.0" prefHeight="71.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="qua1" alignment="CENTER" editable="false" layoutX="160.0" layoutY="54.0" prefHeight="73.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="qui1" alignment="CENTER" editable="false" layoutX="310.0" layoutY="54.0" prefHeight="74.0" prefWidth="191.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="sex1" alignment="CENTER" editable="false" layoutX="310.0" layoutY="54.0" prefHeight="97.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <TextField fx:id="ter2" alignment="CENTER" editable="false" layoutX="10.0" layoutY="89.0" prefHeight="73.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="qua2" alignment="CENTER" editable="false" layoutX="160.0" layoutY="89.0" prefHeight="68.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="qui2" alignment="CENTER" editable="false" layoutX="310.0" layoutY="89.0" prefHeight="68.0" prefWidth="191.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="sex2" alignment="CENTER" editable="false" layoutX="460.0" layoutY="89.0" prefHeight="83.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <TextField fx:id="ter3" alignment="CENTER" editable="false" layoutX="10.0" layoutY="126.0" prefHeight="78.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="qua3" alignment="CENTER" editable="false" layoutX="160.0" layoutY="126.0" prefHeight="79.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="qui3" alignment="CENTER" editable="false" layoutX="310.0" layoutY="126.0" prefHeight="63.0" prefWidth="191.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="sex3" alignment="CENTER" editable="false" layoutX="460.0" layoutY="126.0" prefHeight="74.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <TextField fx:id="ter4" alignment="CENTER" editable="false" layoutX="10.0" layoutY="162.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="qua4" alignment="CENTER" editable="false" layoutX="160.0" layoutY="162.0" prefHeight="73.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="qui4" alignment="CENTER" editable="false" layoutX="310.0" layoutY="162.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="sex4" alignment="CENTER" editable="false" layoutX="460.0" layoutY="162.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <TextField fx:id="ter5" alignment="CENTER" editable="false" layoutX="10.0" layoutY="195.0" prefHeight="62.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="qua5" alignment="CENTER" editable="false" layoutX="160.0" layoutY="195.0" prefHeight="75.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="qui5" alignment="CENTER" editable="false" layoutX="310.0" layoutY="195.0" prefHeight="94.0" prefWidth="191.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="sex5" alignment="CENTER" editable="false" layoutX="460.0" layoutY="195.0" prefHeight="59.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="ter6" alignment="CENTER" editable="false" layoutX="10.0" layoutY="231.0" prefHeight="76.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="qua6" alignment="CENTER" editable="false" layoutX="160.0" layoutY="231.0" prefHeight="77.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="qui6" alignment="CENTER" editable="false" layoutX="310.0" layoutY="231.0" prefHeight="58.0" prefWidth="191.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="sex6" alignment="CENTER" editable="false" layoutX="460.0" layoutY="231.0" prefHeight="92.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="ter7" alignment="CENTER" editable="false" layoutX="10.0" layoutY="269.0" prefHeight="101.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="qua7" alignment="CENTER" editable="false" layoutX="160.0" layoutY="269.0" prefHeight="68.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="qui7" alignment="CENTER" editable="false" layoutX="310.0" layoutY="269.0" prefHeight="61.0" prefWidth="191.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="sex7" alignment="CENTER" editable="false" layoutX="460.0" layoutY="269.0" prefHeight="93.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="ter8" alignment="CENTER" editable="false" layoutX="10.0" layoutY="306.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <TextField fx:id="qua8" alignment="CENTER" editable="false" layoutX="160.0" layoutY="306.0" prefHeight="81.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <TextField fx:id="qui8" alignment="CENTER" editable="false" layoutX="310.0" layoutY="306.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <TextField fx:id="sex8" alignment="CENTER" editable="false" layoutX="460.0" layoutY="306.0" prefHeight="75.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <TextField fx:id="ter9" alignment="CENTER" editable="false" layoutX="10.0" layoutY="341.0" prefHeight="79.0" prefWidth="190.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <TextField fx:id="qua9" alignment="CENTER" editable="false" layoutX="160.0" layoutY="341.0" prefHeight="222.0" prefWidth="191.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <TextField fx:id="qui9" alignment="CENTER" editable="false" layoutX="310.0" layoutY="341.0" prefHeight="36.0" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <TextField fx:id="sex9" alignment="CENTER" editable="false" layoutX="460.0" layoutY="341.0" prefHeight="75.0" prefWidth="191.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <TextField alignment="CENTER" editable="false" layoutX="510.0" layoutY="11.0" prefHeight="50.0" prefWidth="77.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text="N°">
+               <font>
+                  <Font name="Calibri" size="21.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="510.0" layoutY="54.0" prefHeight="51.0" prefWidth="77.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="1º " GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="54.0" prefHeight="66.0" prefWidth="77.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="2º" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="89.0" prefHeight="72.0" prefWidth="125.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="3º" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="126.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="4º" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="162.0" prefHeight="104.0" prefWidth="125.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="5º" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="195.0" prefHeight="107.0" prefWidth="125.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="6º" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="231.0" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="7º" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="269.0" prefHeight="57.0" prefWidth="47.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="8º" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="635.0" layoutY="306.0" prefHeight="69.0" prefWidth="140.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="9º" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></TextField>
+         </children>
+         <effect>
+            <Reflection fraction="0.27" topOpacity="0.31" />
+         </effect>
+      </GridPane>
+      <Button layoutX="461.0" layoutY="639.0" mnemonicParsing="false" onAction="#inserir" prefHeight="57.0" prefWidth="160.0" style="-fx-background-color: orange; -fx-border-color: rgba(0,0,0,.5); -fx-border-width: 1;" text="Efetuar reserva" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="684.0" layoutY="639.0" mnemonicParsing="false" onAction="#excluir" prefHeight="57.0" prefWidth="160.0" style="-fx-background-color: orange; -fx-border-color: rgba(0,0,0,.5); -fx-border-width: 1;" text="Excluir reserva" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

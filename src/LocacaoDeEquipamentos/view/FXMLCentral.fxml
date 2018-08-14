@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" scaleShape="false" style="-fx-background-color: rgba(0,0,0,0.0);" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LocacaoDeEquipamentos.controller.FXMLCentralController">
+<children>
+      <ImageView fitHeight="727.0" fitWidth="1284.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="180.0" fitWidth="1290.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cima.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="9.0" layoutY="9.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="60.0" style="-fx-background-color: White; -fx-background-radius: 100;" textFill="ORANGE">
+         <font>
+            <Font name="Montserrat Light" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#ffa770" height="8.0" radius="3.5" spread="1.0" width="8.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="21.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/sair.png" />
+         </image>
+         <effect>
+            <Shadow blurType="ONE_PASS_BOX" color="#ff9300" height="0.0" radius="0.0" width="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="904.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: hover;">
+         <image>
+            <Image url="@../img/Horarios.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="1015.0" layoutY="581.0" prefHeight="35.0" prefWidth="104.0" text="Horários" textFill="#e8dddd">
+         <font>
+            <Font name="Montserrat Light" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="1052.0" layoutY="618.0" scaleX="1.7" startX="-100.0" stroke="#a89b9b" />
+      <Line endX="100.0" layoutX="1052.0" layoutY="618.0" scaleX="1.5" startX="-100.0" stroke="#a89b9b" strokeWidth="2.0" />
+      <Line endX="100.0" layoutX="1052.0" layoutY="618.0" startX="-100.0" stroke="#a89b9b" strokeWidth="3.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="504.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: hover;">
+         <image>
+            <Image url="@../img/reservas.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="601.0" layoutY="581.0" prefHeight="35.0" prefWidth="108.0" text="Reservas" textFill="#e8dddd">
+         <font>
+            <Font name="Montserrat Light" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="652.0" layoutY="618.0" scaleX="1.7" startX="-100.0" stroke="#a89b9b" />
+      <Line endX="100.0" layoutX="652.0" layoutY="618.0" scaleX="1.5" startX="-100.0" stroke="#a89b9b" strokeWidth="2.0" />
+      <Line endX="100.0" layoutX="650.0" layoutY="618.0" startX="-100.0" stroke="#a89b9b" strokeWidth="3.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="85.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: hover;">
+         <image>
+            <Image url="@../img/professor.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="581.0" prefHeight="35.0" prefWidth="139.0" text="Professores" textFill="#e8dddd">
+         <font>
+            <Font name="Montserrat Light" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="236.0" layoutY="618.0" scaleX="1.7" startX="-100.0" stroke="#a89b9b" />
+      <Line endX="100.0" layoutX="236.0" layoutY="618.0" scaleX="1.5" startX="-100.0" stroke="#a89b9b" strokeWidth="2.0" />
+      <Line endX="100.0" layoutX="236.0" layoutY="618.0" startX="-100.0" stroke="#a89b9b" strokeWidth="3.0" />
+      <Button fx:id="professores" layoutX="89.0" layoutY="257.0" mnemonicParsing="false" onAction="#professores" opacity="0.0" prefHeight="298.0" prefWidth="297.0" style="-fx-background-radius: 500;" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="horarios" layoutX="507.0" layoutY="257.0" mnemonicParsing="false" onAction="#reservas" opacity="0.0" prefHeight="298.0" prefWidth="297.0" style="-fx-background-radius: 500;" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="horarios" layoutX="905.0" layoutY="261.0" mnemonicParsing="false" onAction="#horarios" opacity="0.0" prefHeight="298.0" prefWidth="297.0" style="-fx-background-radius: 500;" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btSair" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#sair" opacity="0.0" prefHeight="65.0" prefWidth="66.0" style="-fx-background-radius: 500;" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btFechar" layoutX="1226.0" layoutY="-25.0" mnemonicParsing="false" onAction="#fechar" prefHeight="33.0" prefWidth="64.0" style="-fx-background-color: rgba(0,0,0,0);" text="x" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="41.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="equipamentos" layoutX="471.0" layoutY="655.0" mnemonicParsing="false" onAction="#equipamentos" prefHeight="43.0" prefWidth="368.0" style="-fx-background-color: orange;" text="       Equipamentos" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="575.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tv.png" />
+         </image>
+      </ImageView>
+</children>
+</AnchorPane>

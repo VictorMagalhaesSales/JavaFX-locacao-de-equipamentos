@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LocacaoDeEquipamentos.controller.FXMLResInsertController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundoinserir.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff8400" layoutX="109.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fazer uma reserva">
+         <font>
+            <Font name="Litchis Island_PersonalUseOnly" size="52.0" />
+         </font>
+      </Text>
+      <Text fill="#434242" layoutX="45.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipamento">
+         <font>
+            <Font name="Montserrat Light" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#434242" layoutX="72.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor">
+         <font>
+            <Font name="Montserrat Light" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#434242" layoutX="84.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário">
+         <font>
+            <Font name="Montserrat Light" size="24.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="comboBoxClientes" layoutX="257.0" layoutY="155.0" prefHeight="25.0" prefWidth="198.0" promptText="Escolha sua opção" style="-fx-background-color: rgba(255,255,255,.5);">
+      </ComboBox>
+      <ComboBox fx:id="comboBoxProfessor" layoutX="257.0" layoutY="237.0" prefHeight="25.0" prefWidth="198.0" promptText="Escolha sua opção" style="-fx-background-color: rgba(255,255,255,.5);">
+      </ComboBox>
+      <ComboBox fx:id="comboBoxHorario" layoutX="257.0" layoutY="312.0" prefHeight="25.0" prefWidth="198.0" promptText="Escolha sua opção" style="-fx-background-color: rgba(255,255,255,.5);">
+      </ComboBox>
+      <Button layoutX="455.0" layoutY="-17.0" mnemonicParsing="false" onAction="#fechar" style="-fx-background-color: rgba(0,0,0,0); -fx-background-radius: 1000;" text="x" textFill="#ff8800">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="48.0" layoutY="381.0" mnemonicParsing="false" onAction="#inserir" prefHeight="63.0" prefWidth="407.0" style="-fx-background-color: orange;" text="Inserir" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Light" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
