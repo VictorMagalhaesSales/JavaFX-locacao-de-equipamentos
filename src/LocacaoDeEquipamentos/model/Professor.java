@@ -6,6 +6,8 @@ public class Professor {
     private int Cdprofessor;
     private String Nome;
     private String Materia;
+    private String Login;
+    private String Senha;
 
     public int getCdprofessor() {
         return Cdprofessor;
@@ -29,6 +31,22 @@ public class Professor {
 
     public void setMateria(String Materia) {
         this.Materia = Materia;
+    }
+
+    public String getLogin() {
+        return Login;
+    }
+
+    public void setLogin(String Login) {
+        this.Login = Login;
+    }
+
+    public String getSenha() {
+        return Senha;
+    }
+
+    public void setSenha(String Senha) {
+        this.Senha = Senha;
     }
 
     @Override

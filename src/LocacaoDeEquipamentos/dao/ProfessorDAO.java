@@ -23,10 +23,12 @@ public class ProfessorDAO {
 
     public boolean inserirProfessor (Professor p) throws Exception {
         Connection con = Conexao.getConexao();
-        String sql = "insert into professor values(0,?,?);";
+        String sql = "insert into professor values(0,?,?,?,?);";
         PreparedStatement stm = (PreparedStatement) con.prepareStatement(sql);
         stm.setString(1, p.getNome());
         stm.setString(2, p.getMateria());
+        stm.setString(3, p.getLogin());
+        stm.setString(4, p.getSenha());
         
 
         if (stm.executeUpdate() == 1) {
